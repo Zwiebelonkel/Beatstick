@@ -113,6 +113,19 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("BeatstickModel"), gdjs._51DViewCode.GDBeatstickModelObjects1);
+{gdjs.evtTools.camera.setCameraX(runtimeScene, (( gdjs._51DViewCode.GDBeatstickModelObjects1.length === 0 ) ? 0 :gdjs._51DViewCode.GDBeatstickModelObjects1[0].getX()), "", 0);
+}{gdjs.evtTools.camera.setCameraY(runtimeScene, (( gdjs._51DViewCode.GDBeatstickModelObjects1.length === 0 ) ? 0 :gdjs._51DViewCode.GDBeatstickModelObjects1[0].getY()) + 220, "", 0);
+}}
+
+}
+
+
 };
 
 gdjs._51DViewCode.func = function(runtimeScene) {
