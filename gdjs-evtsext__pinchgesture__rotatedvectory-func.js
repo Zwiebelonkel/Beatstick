@@ -1,32 +1,28 @@
 
-if (typeof gdjs.evtsExt__CameraShake__SetLoopPeriodY !== "undefined") {
-  gdjs.evtsExt__CameraShake__SetLoopPeriodY.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__PinchGesture__RotatedVectorY !== "undefined") {
+  gdjs.evtsExt__PinchGesture__RotatedVectorY.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY = {};
+gdjs.evtsExt__PinchGesture__RotatedVectorY = {};
 
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.userFunc0x874e90 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-const name = eventsFunctionContext.getArgument("Name");
-
-gdjs._cameraShakeExtension.noiseManager.getGenerator(name).yLoopPeriod = eventsFunctionContext.getArgument("LoopPeriod");
-};
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PinchGesture__RotatedVectorY.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.userFunc0x874e90(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+let isConditionTrue_0 = false;
+{
+{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = Math.sin(gdjs.toRad(eventsFunctionContext.getArgument("Angle"))) * eventsFunctionContext.getArgument("VectorX") + Math.cos(gdjs.toRad(eventsFunctionContext.getArgument("Angle"))) * eventsFunctionContext.getArgument("VectorY"); }}}
 
 }
 
 
 };
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.func = function(runtimeScene, LoopPeriod, Name, parentEventsFunctionContext) {
+gdjs.evtsExt__PinchGesture__RotatedVectorY.func = function(runtimeScene, VectorX, VectorY, Angle, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -34,8 +30,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("CameraShake"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("CameraShake"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PinchGesture"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PinchGesture"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -74,18 +70,19 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "LoopPeriod") return LoopPeriod;
-if (argName === "Name") return Name;
+if (argName === "VectorX") return VectorX;
+if (argName === "VectorY") return VectorY;
+if (argName === "Angle") return Angle;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PinchGesture__RotatedVectorY.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return;
+return Number(eventsFunctionContext.returnValue) || 0;
 }
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.registeredGdjsCallbacks = [];
+gdjs.evtsExt__PinchGesture__RotatedVectorY.registeredGdjsCallbacks = [];

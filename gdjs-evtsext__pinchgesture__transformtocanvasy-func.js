@@ -1,32 +1,44 @@
 
-if (typeof gdjs.evtsExt__CameraShake__SetLoopPeriodY !== "undefined") {
-  gdjs.evtsExt__CameraShake__SetLoopPeriodY.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__PinchGesture__TransformToCanvasY !== "undefined") {
+  gdjs.evtsExt__PinchGesture__TransformToCanvasY.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY = {};
+gdjs.evtsExt__PinchGesture__TransformToCanvasY = {};
 
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.userFunc0x874e90 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PinchGesture__TransformToCanvasY.userFunc0xa58778 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
-const name = eventsFunctionContext.getArgument("Name");
+const x = eventsFunctionContext.getArgument("PositionX");
+const y = eventsFunctionContext.getArgument("PositionY");
+const layer = runtimeScene.getLayer(eventsFunctionContext.getArgument("Layer"));
 
-gdjs._cameraShakeExtension.noiseManager.getGenerator(name).yLoopPeriod = eventsFunctionContext.getArgument("LoopPeriod");
+eventsFunctionContext.returnValue = layer.convertInverseCoords(x, y)[1];
 };
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PinchGesture__TransformToCanvasY.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.userFunc0x874e90(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+gdjs.evtsExt__PinchGesture__TransformToCanvasY.userFunc0xa58778(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
 };
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.func = function(runtimeScene, LoopPeriod, Name, parentEventsFunctionContext) {
+gdjs.evtsExt__PinchGesture__TransformToCanvasY.func = function(runtimeScene, PositionX, PositionY, Layer, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -34,8 +46,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("CameraShake"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("CameraShake"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PinchGesture"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PinchGesture"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -74,18 +86,19 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "LoopPeriod") return LoopPeriod;
-if (argName === "Name") return Name;
+if (argName === "PositionX") return PositionX;
+if (argName === "PositionY") return PositionY;
+if (argName === "Layer") return Layer;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PinchGesture__TransformToCanvasY.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return;
+return Number(eventsFunctionContext.returnValue) || 0;
 }
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodY.registeredGdjsCallbacks = [];
+gdjs.evtsExt__PinchGesture__TransformToCanvasY.registeredGdjsCallbacks = [];
