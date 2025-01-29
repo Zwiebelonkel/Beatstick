@@ -278,7 +278,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__PinchGesture__IsPinching.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14490684);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(11727196);
 }
 }
 if (isConditionTrue_0) {
