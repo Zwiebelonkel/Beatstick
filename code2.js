@@ -229,8 +229,12 @@ gdjs.copyArray(runtimeScene.getObjects("BeatstickModel"), gdjs._51DViewCode.GDBe
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("BeatstickModel"), gdjs._51DViewCode.GDBeatstickModelObjects1);
+gdjs.copyArray(runtimeScene.getObjects("backtext"), gdjs._51DViewCode.GDbacktextObjects1);
 {gdjs.evtTools.camera.setCameraX(runtimeScene, (( gdjs._51DViewCode.GDBeatstickModelObjects1.length === 0 ) ? 0 :gdjs._51DViewCode.GDBeatstickModelObjects1[0].getX()), "", 0);
 }{gdjs.evtTools.camera.setCameraY(runtimeScene, (( gdjs._51DViewCode.GDBeatstickModelObjects1.length === 0 ) ? 0 :gdjs._51DViewCode.GDBeatstickModelObjects1[0].getY()), "", 0);
+}{for(var i = 0, len = gdjs._51DViewCode.GDbacktextObjects1.length ;i < len;++i) {
+    gdjs._51DViewCode.GDbacktextObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 - (gdjs._51DViewCode.GDbacktextObjects1[i].getWidth()) / 2);
+}
 }}
 
 }

@@ -2094,7 +2094,7 @@ if (isConditionTrue_0) {
 
 };gdjs.Untitled_32sceneCode.mapOfGDgdjs_9546Untitled_959532sceneCode_9546GDpadObjects1Objects = Hashtable.newFrom({"pad": gdjs.Untitled_32sceneCode.GDpadObjects1});
 gdjs.Untitled_32sceneCode.mapOfGDgdjs_9546Untitled_959532sceneCode_9546GDBaseObjects1Objects = Hashtable.newFrom({"Base": gdjs.Untitled_32sceneCode.GDBaseObjects1});
-gdjs.Untitled_32sceneCode.userFunc0x8d2260 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.Untitled_32sceneCode.userFunc0x9b11f8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 (function(runtimeScene, objects) {
     // Bereinigung von vorherigen Event-Listenern
@@ -2210,7 +2210,7 @@ gdjs.Untitled_32sceneCode.eventsList46 = function(runtimeScene) {
 
 var objects = [];
 objects.push.apply(objects,gdjs.Untitled_32sceneCode.GDBaseObjects1);
-gdjs.Untitled_32sceneCode.userFunc0x8d2260(runtimeScene, objects);
+gdjs.Untitled_32sceneCode.userFunc0x9b11f8(runtimeScene, objects);
 
 }
 
