@@ -43,11 +43,22 @@ for(var i = 0, len = gdjs.menuCode.GDtutorialOkObjects1.length ;i < len;++i) {
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("Beatstick"), gdjs.menuCode.GDBeatstickObjects1);
+gdjs.copyArray(runtimeScene.getObjects("tutorialOk"), gdjs.menuCode.GDtutorialOkObjects1);
+gdjs.copyArray(runtimeScene.getObjects("tutorialtext"), gdjs.menuCode.GDtutorialtextObjects1);
 {for(var i = 0, len = gdjs.menuCode.GDBeatstickObjects1.length ;i < len;++i) {
     gdjs.menuCode.GDBeatstickObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 - (gdjs.menuCode.GDBeatstickObjects1[i].getWidth()) / 2);
 }
 }{for(var i = 0, len = gdjs.menuCode.GDBeatstickObjects1.length ;i < len;++i) {
     gdjs.menuCode.GDBeatstickObjects1[i].getBehavior("ShakeObject_PositionAngle").ShakeObject_PositionAngle(0.5, 2, 2, 1, 0.1, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.menuCode.GDtutorialtextObjects1.length ;i < len;++i) {
+    gdjs.menuCode.GDtutorialtextObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 - (gdjs.menuCode.GDtutorialtextObjects1[i].getWidth()) / 2);
+}
+}{for(var i = 0, len = gdjs.menuCode.GDtutorialOkObjects1.length ;i < len;++i) {
+    gdjs.menuCode.GDtutorialOkObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 - (gdjs.menuCode.GDtutorialOkObjects1[i].getWidth()) / 2);
+}
+}{for(var i = 0, len = gdjs.menuCode.GDtutorialtextObjects1.length ;i < len;++i) {
+    gdjs.menuCode.GDtutorialtextObjects1[i].getBehavior("Scale").setScale(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 1500);
 }
 }}
 
