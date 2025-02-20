@@ -87,7 +87,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.localVariables[0].getFromIndex(0)) != 0;
+{isConditionTrue_0 = (eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber() != 0);
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaX").setNumber(gdjs.evtsExt__CameraShake__Noise2d.func(runtimeScene, "", gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene), 1000, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) * eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber() * eventsFunctionContext.localVariables[0].getFromIndex(4).getAsNumber());
 }{gdjs.evtTools.camera.setCameraX(runtimeScene, gdjs.evtTools.camera.getCameraX(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0) + (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaX").getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0);
@@ -101,7 +102,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.localVariables[0].getFromIndex(1)) != 0;
+{isConditionTrue_0 = (eventsFunctionContext.localVariables[0].getFromIndex(1).getAsNumber() != 0);
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaY").setNumber(gdjs.evtsExt__CameraShake__Noise2d.func(runtimeScene, "", gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene), 2000, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) * eventsFunctionContext.localVariables[0].getFromIndex(1).getAsNumber() * eventsFunctionContext.localVariables[0].getFromIndex(4).getAsNumber());
 }{gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0) + (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaY").getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0);
@@ -115,7 +117,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.localVariables[0].getFromIndex(2)) != 0;
+{isConditionTrue_0 = (eventsFunctionContext.localVariables[0].getFromIndex(2).getAsNumber() != 0);
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaAngle").setNumber(gdjs.evtsExt__CameraShake__Noise2d.func(runtimeScene, "", gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene), 3000, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) * eventsFunctionContext.localVariables[0].getFromIndex(2).getAsNumber() * eventsFunctionContext.localVariables[0].getFromIndex(4).getAsNumber());
 }{gdjs.evtTools.camera.setCameraRotation(runtimeScene, gdjs.evtTools.camera.getCameraRotation(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0) + (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaAngle").getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0);
@@ -129,7 +132,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.localVariables[0].getFromIndex(3)) != 1;
+{isConditionTrue_0 = (eventsFunctionContext.localVariables[0].getFromIndex(3).getAsNumber() != 1);
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaZoom").setNumber(Math.pow(eventsFunctionContext.localVariables[0].getFromIndex(3).getAsNumber(), gdjs.evtsExt__CameraShake__Noise2d.func(runtimeScene, "", gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene), 4000, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) * eventsFunctionContext.localVariables[0].getFromIndex(4).getAsNumber()));
 }{gdjs.evtTools.camera.setCameraZoom(runtimeScene, gdjs.evtTools.camera.getCameraZoom(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0) * eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaZoom").getAsNumber(), eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0);
@@ -156,7 +160,8 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8)) == "__BaseLayer";
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString() == "__BaseLayer");
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(5).setString("");
 }}
@@ -200,10 +205,12 @@ gdjs.evtsExt__CameraShake__onScenePostEvents.eventsList0(runtimeScene, eventsFun
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9)) < eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber();
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber() < eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber());
+}
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9)) > eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() - eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber());
+{isConditionTrue_0 = !(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber() > eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() - eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber());
+}
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(4).setNumber(gdjs.evtTools.common.clamp(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber() / eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber(), 0, 1));
@@ -217,7 +224,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9)) > eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() - eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber();
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber() > eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() - eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber());
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(4).setNumber(gdjs.evtTools.common.clamp((eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() - eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber()) / eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber(), 0, 1));
 }}
@@ -258,7 +266,8 @@ for(
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("Shakable"), true, false);
+{isConditionTrue_0 = eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("Shakable").getAsBoolean();
+}
 if (isConditionTrue_0)
 {
 

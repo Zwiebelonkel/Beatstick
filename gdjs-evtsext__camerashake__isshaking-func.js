@@ -15,7 +15,8 @@ gdjs.evtsExt__CameraShake__IsShaking.eventsList0 = function(runtimeScene, events
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9)) < eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber();
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber() < eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber());
+}
 if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 

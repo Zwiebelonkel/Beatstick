@@ -15,7 +15,8 @@ gdjs.evtsExt__PinchGesture__IsPinching.eventsList0 = function(runtimeScene, even
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15)) == 2;
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).getAsNumber() == 2);
+}
 if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 

@@ -22,7 +22,8 @@ gdjs.evtsExt__PinchGesture__onScenePreEvents.eventsList0 = function(runtimeScene
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15)) == 1;
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).getAsNumber() == 1);
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(16).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(17).getAsNumber());
 }}
@@ -68,7 +69,8 @@ gdjs.evtsExt__PinchGesture__onScenePreEvents.eventsList0(runtimeScene, eventsFun
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15)) == 1;
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).getAsNumber() == 1);
+}
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.hasTouchEnded(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(16).getAsNumber());
@@ -85,7 +87,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15)) == 2;
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).getAsNumber() == 2);
+}
 if (isConditionTrue_0) {
 
 { //Subevents
@@ -118,7 +121,8 @@ gdjs.evtsExt__PinchGesture__onScenePreEvents.eventsList1(runtimeScene, eventsFun
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15)) == 1;
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).getAsNumber() == 1);
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).setNumber(2);
 }{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(17).setNumber(gdjs.evtTools.input.getStartedTouchIdentifier(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber()));
@@ -150,7 +154,8 @@ gdjs.evtsExt__PinchGesture__onScenePreEvents.eventsList3(runtimeScene, eventsFun
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15)) == 0;
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).getAsNumber() == 0);
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(16).setNumber(gdjs.evtTools.input.getStartedTouchIdentifier(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber()));
 }{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).setNumber(1);
@@ -233,7 +238,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.hasAnyTouchStarted(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15)) < 2;
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).getAsNumber() < 2);
+}
 }
 if (isConditionTrue_0) {
 
@@ -251,7 +257,8 @@ gdjs.evtsExt__PinchGesture__onScenePreEvents.eventsList6(runtimeScene, eventsFun
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15)) == 2;
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(15).getAsNumber() == 2);
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).setNumber(gdjs.evtTools.common.angleBetweenPositions(gdjs.evtsExt__PinchGesture__TouchCanvasX.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(16).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), gdjs.evtsExt__PinchGesture__TouchCanvasY.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(16).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), gdjs.evtsExt__PinchGesture__TouchCanvasX.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(17).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), gdjs.evtsExt__PinchGesture__TouchCanvasY.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(17).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
 }{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(12).setNumber(gdjs.evtTools.common.distanceBetweenPositions(gdjs.evtsExt__PinchGesture__TouchCanvasX.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(16).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), gdjs.evtsExt__PinchGesture__TouchCanvasY.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(16).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), gdjs.evtsExt__PinchGesture__TouchCanvasX.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(17).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), gdjs.evtsExt__PinchGesture__TouchCanvasY.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(17).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));

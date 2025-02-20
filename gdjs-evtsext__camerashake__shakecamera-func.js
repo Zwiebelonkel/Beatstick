@@ -29,7 +29,8 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5)) < eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber() + eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber();
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() < eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber() + eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber());
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber() * eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() / (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber() + eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber()));
 }{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber() * eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() / (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber() + eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber()));

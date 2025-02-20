@@ -15,7 +15,8 @@ gdjs.evtsExt__CameraShake__onScenePreEvents.eventsList0 = function(runtimeScene,
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8)) == "__BaseLayer";
+{isConditionTrue_0 = (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString() == "__BaseLayer");
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setString("");
 }}
@@ -28,7 +29,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.localVariables[0].getFromIndex(1)) != 0;
+{isConditionTrue_0 = (eventsFunctionContext.localVariables[0].getFromIndex(1).getAsNumber() != 0);
+}
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraX(runtimeScene, gdjs.evtTools.camera.getCameraX(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0) - (eventsFunctionContext.localVariables[0].getFromIndex(1).getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0);
 }}
@@ -41,7 +43,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.localVariables[0].getFromIndex(2)) != 0;
+{isConditionTrue_0 = (eventsFunctionContext.localVariables[0].getFromIndex(2).getAsNumber() != 0);
+}
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0) - (eventsFunctionContext.localVariables[0].getFromIndex(2).getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0);
 }}
@@ -54,7 +57,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.localVariables[0].getFromIndex(3)) != 0;
+{isConditionTrue_0 = (eventsFunctionContext.localVariables[0].getFromIndex(3).getAsNumber() != 0);
+}
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraRotation(runtimeScene, gdjs.evtTools.camera.getCameraRotation(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0) - (eventsFunctionContext.localVariables[0].getFromIndex(3).getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0);
 }}
@@ -67,7 +71,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.localVariables[0].getFromIndex(4)) != 0;
+{isConditionTrue_0 = (eventsFunctionContext.localVariables[0].getFromIndex(4).getAsNumber() != 0);
+}
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraZoom(runtimeScene, gdjs.evtTools.camera.getCameraZoom(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0) / eventsFunctionContext.localVariables[0].getFromIndex(4).getAsNumber(), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0);
 }}
@@ -110,7 +115,8 @@ for(
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("Shakable"), true, false);
+{isConditionTrue_0 = eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("Shakable").getAsBoolean();
+}
 if (isConditionTrue_0)
 {
 {eventsFunctionContext.localVariables[0].getFromIndex(1).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("CameraDeltaX").getAsNumber());

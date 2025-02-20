@@ -46,7 +46,7 @@ if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 {
 {gdjs.evtTools.variable.variableClearChildren(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6));
-}{gdjs.evtsExt__CameraShake__SetLayerShakable.func(runtimeScene, true, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__CameraShake__SetLayerShakable.func(runtimeScene, true, eventsFunctionContext.getArgument("Layer"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
@@ -58,10 +58,10 @@ let isConditionTrue_0 = false;
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).setNumber(0);
-}{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).setString("");
-}{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber());
+}{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).setString(eventsFunctionContext.getArgument("Layer"));
+}{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).setNumber(eventsFunctionContext.getArgument("Duration"));
 }{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).setNumber(0);
-}{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber());
+}{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).setNumber(eventsFunctionContext.getArgument("Duration"));
 }{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1).setNumber(Math.abs(eventsFunctionContext.getArgument("AmplitudeX")));
 }{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(2).setNumber(Math.abs(eventsFunctionContext.getArgument("AmplitudeY")));
 }{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(3).setNumber(eventsFunctionContext.getArgument("AmplitudeAngle"));
@@ -107,7 +107,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5)) == 0;
+{isConditionTrue_0 = (eventsFunctionContext.getArgument("Duration") == 0);
+}
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).setNumber(0.5);
 }}

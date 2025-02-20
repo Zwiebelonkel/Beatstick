@@ -15,7 +15,8 @@ gdjs.evtsExt__PinchGesture__IsCameraPinchEnabled.eventsList0 = function(runtimeS
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), true, false);
+{isConditionTrue_0 = eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getAsBoolean();
+}
 if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 

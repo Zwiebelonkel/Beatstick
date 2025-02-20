@@ -278,7 +278,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__PinchGesture__IsPinching.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(11727196);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(13697964);
 }
 }
 if (isConditionTrue_0) {
@@ -314,13 +314,13 @@ gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.G
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].setCenterXInScene(gdjs.evtsExt__PinchGesture__TransformedX.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber(), eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber(), (gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].getLayer()), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+    gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].setCenterXInScene(gdjs.evtsExt__PinchGesture__TransformedX.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBeginningCenterX(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBeginningCenterY(), (gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].getLayer()), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
 }
 }{for(var i = 0, len = gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].setCenterYInScene(gdjs.evtsExt__PinchGesture__TransformedY.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber(), eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber(), (gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].getLayer()), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+    gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].setCenterYInScene(gdjs.evtsExt__PinchGesture__TransformedY.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBeginningCenterX(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBeginningCenterY(), (gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].getLayer()), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
 }
 }{for(var i = 0, len = gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].setAngle(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsNumber() + gdjs.evtsExt__PinchGesture__Rotation.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+    gdjs.evtsExt__PinchGesture__Pichable.Pichable.prototype.doStepPreEventsContext.GDObjectObjects1[i].setAngle(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBeginningAngle() + gdjs.evtsExt__PinchGesture__Rotation.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
 }
 }
 { //Subevents
