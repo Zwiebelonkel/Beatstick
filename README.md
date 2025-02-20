@@ -8,6 +8,7 @@ Dies ist ein Programm geschrieben von Jan-Luca Müller, Jonas Volkmann und Cedri
 - 4 Instrumente
 - Instrument-Sample wechseln
 - Start/Stop
+- Aus/An
 - Tempo ändern
 - Sequencer-Länge ändern
 - Motion-Control
